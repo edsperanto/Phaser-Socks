@@ -11,7 +11,6 @@
     return parsedMessage;
   };
 
-  // implicit return without brackets
   const create = (OP, payload) => JSON.stringify({
     OP,
     payload,
@@ -21,6 +20,8 @@
    * OP codes
    */
   const ERROR = 'ERROR';
+  const REGISTER = 'REGISTER';
+  const REGISTERACK = 'REGISTERACK';
 
   /*
    * the module
@@ -29,6 +30,8 @@
     create,
     parse,
     ERROR,
+    REGISTER,
+    REGISTERACK,
   };
 
 
